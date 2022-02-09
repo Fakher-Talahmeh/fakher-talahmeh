@@ -42,7 +42,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(sss.jpg)no-repeat;
+    background: url("qwe.jpg")no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -182,12 +182,16 @@ address{
     background-color: rgb(19, 99, 168);
     width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     padding: 10px 100px;
 }
 .h {
     color: darkgray;
     padding-right: 20px;
+}
+footer-social-icons{
+    display: flex;
+    flex-direction: row;
 }
 @media (max-width:1023px){
     header{
@@ -218,6 +222,19 @@ address{
     .navigation a{
         font-size: 1.1em;
     }
+    address a{
+        font-size: 1.3em;
+    }
+    address {
+        padding:10px 20px ;
+        grid-gap: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+    address a{
+        padding-right: 15px;
+    }
+
 }
 @media (max-width:300px){
     body{
@@ -227,4 +244,8 @@ address{
     .logo {
         font-size: 1.3em;
     }
+    address a{
+        font-size: 1.2em;
+    }
+    
 }
