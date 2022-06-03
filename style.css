@@ -55,7 +55,6 @@ section {
     position: relative;
     height: 100%;
 }
-
 .main::after {
     content: "";
     width: 100%;
@@ -316,6 +315,10 @@ address {
         flex-direction: column;
         align-items: center;
     }
+    .iimg{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media(max-width:641px) {
@@ -339,6 +342,10 @@ address {
     }
     address a {
         padding-right: 15px;
+    }
+    .iimg{
+        width: 135px;
+        height: 135px;
     }
 }
 
