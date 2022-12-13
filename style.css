@@ -297,7 +297,27 @@ address {
     top: 70%;
     text-align: center;
 }
-
+.front:hover{
+    animation: anim 1s;
+}
+@keyframes anim{
+    25%{
+        border-radius: 50% 0 0 0;
+        transform: rotate(45deg);
+    }
+    50%{
+        border-radius: 50% 50% 0 0;
+        transform: rotate(90deg);
+    }
+    75%{
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(135deg);
+    }
+    100%{
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(180deg);
+    }
+}
 @media (max-width:1023px) {
     header {
         padding: 12px 20px;
